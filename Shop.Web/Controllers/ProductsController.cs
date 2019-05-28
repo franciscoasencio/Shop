@@ -3,18 +3,20 @@
     using System.Threading.Tasks;
     using Data;
     using Data.Entities;
+    using Helpers;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.EntityFrameworkCore;
-
 
 
     public class ProductsController : Controller
     {
         private readonly IRepository repository;
+        private readonly IUserHelper userHelper;
 
-        public ProductsController(IRepository repository)
+        public ProductsController(IRepository repository, IUserHelper userHelper)
         {
             this.repository = repository;
+            this.userHelper = userHelper;
         }
 
         public IActionResult Index()
@@ -49,6 +51,8 @@
         {
             if (ModelState.IsValid)
             {
+                //TODO: Se debe cambiar luego por el User que esté logeado..... 
+                product.User = await userHelper.GetUserByEmailAsync("francisco.asencio@gmail.com");
                 this.repository.AddProduct(product);
                 await this.repository.SaveAllAsync();
                 return RedirectToAction(nameof(Index));
@@ -80,6 +84,8 @@
             {
                 try
                 {
+                    //TODO: Se debe cambiar luego por el User que esté logeado..... 
+                    product.User = await userHelper.GetUserByEmailAsync("francisco.asencio@gmail.com");
                     this.repository.UpdateProduct(product);
                     await this.repository.SaveAllAsync();
                 }
