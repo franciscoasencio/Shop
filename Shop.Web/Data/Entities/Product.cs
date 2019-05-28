@@ -6,7 +6,7 @@
     public class Product
     {
         public int Id { get; set; }
-        [MaxLength(50, ErrorMessage = "The field {0} only can contain a maximum {1} characters")]
+        [MaxLength(50, ErrorMessage = "The field {0} can only contain a maximum of {1} characters")]
         [Required]
         public string Name { get; set; }
 
