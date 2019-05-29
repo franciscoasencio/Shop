@@ -1,8 +1,7 @@
-﻿
+﻿using Shop.UIForms.ViewModels;
 
 namespace Shop.UIForms.Infrastructure
 {
-    using Shop.UIForms.ViewModels;
 
     public class InstanceLocator
     {
@@ -11,7 +10,6 @@ namespace Shop.UIForms.Infrastructure
         public InstanceLocator()
         {
             this.Main = new MainViewModel();
-
         }
     }
 

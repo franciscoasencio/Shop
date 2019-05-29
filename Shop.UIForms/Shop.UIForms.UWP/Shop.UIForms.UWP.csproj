@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{BA986018-C1B1-44D0-BB02-7E9A9E78FFC8}</ProjectGuid>
+    <ProjectGuid>{9A75B72D-6FF3-4A00-AF5E-48B95E0B90B8}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Shop.UIForms.UWP</RootNamespace>
@@ -143,13 +143,13 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="4.0.0.425677" />
-    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.2.8" />
+    <PackageReference Include="Xamarin.Forms" Version="3.6.0.344457" />
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.1.9"/>
     <PackageReference Include="Xamarin.Essentials" Version="1.1.0" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Shop.UIForms\Shop.UIForms.csproj">
-      <Project>{0ACBE260-2D22-4AA4-8322-64C86BD67234}</Project>
+      <Project>{B5508538-10EE-4B69-8D7C-619249B10067}</Project>
       <Name>Shop.UIForms</Name>
     </ProjectReference>
   </ItemGroup>
