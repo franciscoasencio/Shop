@@ -16,8 +16,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shop.Web", "Shop.Web\Shop.W
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Forms", "Forms", "{ACAD98F6-84E2-44A3-81FF-F2BC07D6056A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Classic", "Classic", "{51AF0B4E-92A4-436C-A4CA-F0EE302FB5BD}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -89,7 +87,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{09D53617-D3ED-4191-81D8-2E01C0A3DA5F} = {31043BDB-6ECF-4466-8E8F-6ABBD1F7E36B}
 		{ACAD98F6-84E2-44A3-81FF-F2BC07D6056A} = {4D42C2F2-8E6A-47DA-B08F-0E3159AD06FA}
-		{51AF0B4E-92A4-436C-A4CA-F0EE302FB5BD} = {4D42C2F2-8E6A-47DA-B08F-0E3159AD06FA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BF7AA85B-3FAC-4E8D-84E6-E937813ECF19}
