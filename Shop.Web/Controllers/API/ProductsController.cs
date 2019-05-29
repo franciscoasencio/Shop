@@ -13,11 +13,14 @@
             this.productRepository = productRepository;
         }
 
+
         [HttpGet]
         public IActionResult GetProducts()
         {
             return this.Ok(this.productRepository.GetAll());
         }
+
+
     }
 
 
